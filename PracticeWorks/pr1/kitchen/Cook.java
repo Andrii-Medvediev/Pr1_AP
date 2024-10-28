@@ -1,4 +1,4 @@
-package kitchen_2;
+package PracticeWorks.pr1.kitchen;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -15,12 +15,14 @@ public class Cook implements Runnable {
 
             System.out.printf("Розміщення %s.\n", orderName);
             Thread.sleep(1000); // Імітація розмішення замовлення
+            Main.newOrder();
 
             // Безкінечний цикл очікування на вільного кухаря
             while (true) {
                 // Перевіряємо, чи відкрита кухня. Якщо кухня закрита, завершуємо обробку замовлення
                 if (!Main.isKitchenOpen()) {
                     System.out.printf("Кухня закрита. Ресторан не може приготувати %s.\n", orderName);
+                    Main.completeOrder();
                     return;
                 }
 
@@ -41,6 +43,9 @@ public class Cook implements Runnable {
                     Thread.sleep(100);  // Затримка перед повторною спробою
                 }
             }
+
+            Main.completeOrder();
+
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

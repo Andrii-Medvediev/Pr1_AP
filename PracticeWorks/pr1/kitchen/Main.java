@@ -1,15 +1,13 @@
-package kitchen_2;
+package PracticeWorks.pr1.kitchen;
 
-import java.util.List;
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.concurrent.Semaphore;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class Main {
 
     static final Semaphore cooks = new Semaphore(4);
     private static boolean isOpen = true;
-    static List<Thread> list = Collections.synchronizedList(new ArrayList<Thread>());
+    private static final AtomicInteger ordersInProgress = new AtomicInteger(0);
 
     public static synchronized boolean isKitchenOpen() {
         return isOpen;
@@ -20,6 +18,18 @@ public class Main {
         System.err.println("===================== Кухня закрилася =====================");
     }
 
+    public static synchronized void newOrder() {
+        ordersInProgress.incrementAndGet();
+    }
+
+    public static synchronized void completeOrder() {
+        ordersInProgress.decrementAndGet();
+    }
+
+    public static synchronized boolean areOrdersPresent() {
+        return ordersInProgress.get() > 0;
+    }
+
     public static void main(String[] args) throws InterruptedException {
 
         System.err.println("==================== Кухня  відкрилася ====================");
@@ -27,11 +37,7 @@ public class Main {
         Runnable kitchen = () -> {
             int i = 0;
             while (isKitchenOpen()) {
-                Thread thread = new Thread(new Cook(), "Замовлення " + ++i);
-                thread.start();
-
-                list.add(thread);
-
+                new Thread(new Cook(), "Замовлення " + ++i).start();
                 try {
                     Thread.sleep(1000);
                 } catch (InterruptedException e) {
@@ -46,10 +52,9 @@ public class Main {
         Thread.sleep(10_000);
         closeKitchen();
 
-        for(Thread thread: list) {
-            thread.join();
+        while (areOrdersPresent()) {
+            Thread.sleep(1000);
         }
-        kitchenThread.join();
 
         System.err.println("==================== Всі кухарі вільні ====================");
     }

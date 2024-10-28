@@ -1,4 +1,4 @@
-package pr2;
+package PracticeTasks.pr2;
 
 import java.util.Arrays;
 import java.util.List;
@@ -10,7 +10,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 
-public class Main2 {
+public class Main {
     // Метод для обробки частини тексту
     public static Callable<Map<String, Integer>> countWordsPart(String[] words) {
         return () -> {
