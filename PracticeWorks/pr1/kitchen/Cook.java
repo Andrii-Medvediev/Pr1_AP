@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 package Hometasks.pr1.kitchen;
+=======
+package PracticeWorks.pr1.kitchen;
+>>>>>>> 116c2b79955f6f6dd2be9fe2f1f8c5c662407fbe
 
 import java.util.concurrent.atomic.AtomicInteger;
 
