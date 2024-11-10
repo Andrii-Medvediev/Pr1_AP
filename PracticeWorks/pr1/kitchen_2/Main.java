@@ -1,4 +1,4 @@
-package PracticeWorks.pr1.kitchen_2;
+package Hometasks.pr1.kitchen_2;
 
 import java.util.List;
 import java.util.ArrayList;

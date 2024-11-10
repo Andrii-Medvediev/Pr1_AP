@@ -1,4 +1,4 @@
-package PracticeWorks.pr1.kitchen;
+package Hometasks.pr1.kitchen;
 
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.atomic.AtomicInteger;
