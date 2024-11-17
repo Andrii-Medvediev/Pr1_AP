@@ -1,0 +1,1 @@
+Multithreading in Java is a powerful tool to utilize CPU cores efficiently. Proper synchronization is critical in concurrent programming.

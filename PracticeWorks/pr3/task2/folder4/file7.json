@@ -1,0 +1,21 @@
+{
+    "title": "The Power of Innovation",
+    "description": "An overview of key innovations and their impact on society.",
+    "examples": [
+        {
+            "name": "The Wheel",
+            "era": "Ancient times",
+            "impact": "Revolutionized transportation and logistics"
+        },
+        {
+            "name": "The Internet",
+            "era": "20th century",
+            "impact": "Connected billions globally"
+        },
+        {
+            "name": "Artificial Intelligence",
+            "era": "21st century",
+            "impact": "Transforming industries and lifestyles"
+        }
+    ]
+}

@@ -1,4 +1,4 @@
-package PracticeWorks.pr2;
+package pr2;
 
 import java.util.Arrays;
 import java.util.Random;

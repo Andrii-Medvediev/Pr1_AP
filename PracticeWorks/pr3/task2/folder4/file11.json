@@ -1,0 +1,17 @@
+{
+    "title": "Oceans and Marine Life",
+    "description": "An exploration of the oceans' importance and the threats they face.",
+    "details": {
+        "coverage": "More than 70% of Earth's surface",
+        "ecosystems": [
+            "Coral reefs",
+            "Open ocean",
+            "Deep sea"
+        ],
+        "threats": [
+            "Pollution",
+            "Overfishing",
+            "Climate change"
+        ]
+    }
+}

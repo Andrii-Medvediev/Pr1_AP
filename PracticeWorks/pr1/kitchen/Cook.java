@@ -1,4 +1,4 @@
-package PracticeWorks.pr1.kitchen;
+package pr1.kitchen;
 
 import java.util.concurrent.atomic.AtomicInteger;
 

@@ -1,0 +1,1 @@
+Recursive tasks allow the division of a big problem into smaller tasks. This principle is the foundation of Work Stealing in ForkJoinPool.

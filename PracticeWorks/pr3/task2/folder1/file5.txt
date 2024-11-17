@@ -1,0 +1,1 @@
+ExecutorService in Java provides an abstraction for managing threads. It is a popular choice for implementing Work Dealing in multithreaded programs.

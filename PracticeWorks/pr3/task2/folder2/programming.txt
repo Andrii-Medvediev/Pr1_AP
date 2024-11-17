@@ -1,0 +1,1 @@
+Java is a versatile programming language widely used for web development, mobile applications, and enterprise systems. Its "write once, run anywhere" capability makes it a favorite among developers worldwide.

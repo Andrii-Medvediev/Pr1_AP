@@ -1,0 +1,23 @@
+{
+    "title": "Leadership and Change",
+    "description": "Qualities of great leaders and their impact on society.",
+    "famous_leaders": [
+        {
+            "name": "Mahatma Gandhi",
+            "contribution": "Nonviolent resistance for India's independence"
+        },
+        {
+            "name": "Martin Luther King Jr.",
+            "contribution": "Civil rights movement in the United States"
+        },
+        {
+            "name": "Nelson Mandela",
+            "contribution": "Ending apartheid in South Africa"
+        }
+    ],
+    "modern_challenges": [
+        "Global crises",
+        "Technological disruptions",
+        "Political instability"
+    ]
+}
