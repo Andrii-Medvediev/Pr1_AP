@@ -1,3 +1,5 @@
+package pr5.task1;
+
 import java.util.concurrent.*;
 import java.util.Arrays;
 import java.util.Random;
