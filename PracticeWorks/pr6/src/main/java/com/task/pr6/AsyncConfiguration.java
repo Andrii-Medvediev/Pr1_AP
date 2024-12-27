@@ -8,7 +8,6 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @Configuration
 @EnableScheduling
 public class AsyncConfiguration {
-
     // Кастомний Scheduler для запланованих задач
     @Bean
     public ThreadPoolTaskScheduler taskScheduler() {
